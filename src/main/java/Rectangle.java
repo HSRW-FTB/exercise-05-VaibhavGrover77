@@ -41,5 +41,13 @@ public class Rectangle extends GeometricObject {
     public String toString(){
         return "created on "+ getDateCreated() + "color is " + this.getColor() + "and filled " + this.isFilled();
     }
+
+    public double getArea(){
+        return height*width;
+    }
+    public double getPerimeter(){
+        return 2*(height + width);
+    }
+
 }
 

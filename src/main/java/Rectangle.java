@@ -47,11 +47,5 @@ public class Rectangle extends GeometricObject {
         // TODO Auto-generated method stub
         return 0;
     }
-
-    @Override
-    public double getPeriemeter() {
-        // TODO Auto-generated method stub
-        return 0;
-    }
 }
 

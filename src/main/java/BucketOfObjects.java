@@ -1,32 +1,33 @@
-import java.util.ArrayList;
 public class BucketOfObjects {
-    private ArrayList<GeometricObject> items = new ArrayList<GeometricObject>();
+    private GeometricObject[] items;
 
     // constructor 
     BucketOfObjects(){}
     public void addObject(GeometricObject obj){
-        item.add(obj);
+        for (int i=0; i< items.length ; i++){
+            items[i] = obj;
+        }
     }
     public double getTotalArea(){
         double a = 0.0;
-        for (GeometricObject obj : items){
-            a += obj.getArea();
+        for (int i = 0; i< items.length ; i++){
+            a = a+ items[i].getArea();
         }
         return a;
     }
     public double getTotalPerimeter(){
         double p = 0;
-        for (GeomtericObject obj : items){
-            p += obj.getPerimeter;
+        for (int i=0 ; i< items.length ; i++){
+            p = p+ items[i].getPerimeter();
         }
         return p;
     }
     public String toString(){
         String s = "";
-        for (GeometricObject obj : items){
-            s += obj.getClass().getSimpleName();
+        for (int i = 0; i< items.length ; i++){
+            s += String.valueOf(this.items[i]);
             System.out.println(",");
         }
-        return s = s.substring(0,str.length()-2);
+        return s;
     }
 }

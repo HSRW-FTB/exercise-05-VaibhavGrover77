@@ -1,5 +1,5 @@
 //enum Course { ME, MSE, EL, IE, BMS, SCB, MME, MBB }
-public class Course extends Classroom{
+public class Course {
     private String id;
     private String name;
     private Professor lecturer;
